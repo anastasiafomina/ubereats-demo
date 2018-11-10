@@ -1,0 +1,53 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+
+    
+    /* НЕ забыть добавить потом для мобильной версии
+.delivery{ 
+    display: none;
+}
+*/
+
+
+.delivery-time {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 40px;
+  width: 65px;
+  border: 1px solid #E0E0E0;
+  border-radius: 2px;
+  text-align: center;
+  text-align-last: center;
+  
+}
+
+.delivery-address {
+    background: url(./images/stores/location.svg) no-repeat 12px;
+    width: 227px;
+    height: 40px;
+    border: 1px solid #E0E0E0;
+    border-radius: 2px;
+    padding-left: 35px;
+    color: #1D1D1D;
+    font-size: 13px;
+}
+
+.header-buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+.button-basket{
+    width: 19px;
+    height: 23px;
+    background: url(./images/stores/basket.svg) no-repeat;
+    border: none;
+}
+  
