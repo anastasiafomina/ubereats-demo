@@ -1,20 +1,29 @@
+html {
+  box-sizing: border-box;
+}
+
+h1
+h2,
+h3,
+h4,
+h5,
+h6,
+p  {
+  font-weight: normal;
+}
+
 .container{
   box-sizing: border-box;
   padding-left: 8px;
   padding-right: 8px;
   margin-left: auto;
   margin-right: auto;
-}
-
-@media (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
+  width: 100%;
 }
   
 @media (min-width: 992px) {
   .container {
-    width: 972px;
+    width: 992px;
   }
 }
 
@@ -121,6 +130,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  font-weight: normal;
 }
 
 header {
@@ -137,7 +147,6 @@ header {
   display: flex;
   align-self: center;
   height: 40px;
-  margin-top: 1px;
   justify-content: flex-start;
 }
 
@@ -149,7 +158,7 @@ header {
 @media (min-width: 768px) { 
   .delivery{ 
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: center;
   }
 }
@@ -158,12 +167,6 @@ header {
   .delivery{ 
     justify-content: flex-end;
   }
-}
-
-.delivery-form {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
 }
 
 .delivery-time {
@@ -179,11 +182,13 @@ header {
   font-size: 13px;
   color: #1D1D1D;
   line-height: 24px;
+  margin-top: 8px;
 }
 
 @media (min-width: 768px) {
   .delivery-time {
     width: 57px;
+    margin-top: 0px;
   }
 }
 
@@ -214,23 +219,23 @@ header {
 
 .delivery-address {
   background: url(./images/stores/location.svg) no-repeat 12px;
-  width: 223px;
   height: 36px;
+  width: 223px;
   border: 1px solid #E0E0E0;
   border-radius: 2px;
   color: #1D1D1D;
   padding-left: 35px;
   font-size: 13px;
   line-height: 24px; 
-  margin-top: 1px;
+  margin-top: 8px;
 }
-
 
 @media (min-width: 768px) {
   .delivery-address {
     font-size: 13px;
     width: 179px;
     padding-left: 36px;
+    margin-top: 0px;
   }
 }
 
@@ -242,9 +247,31 @@ header {
   }
 }
 
+.delivery-mobile{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 16px;
+}
+
+
+@media (min-width: 768px) {
+  .delivery-mobile{
+    display: none;
+  }
+}
+
+.delivery-label {
+  display: flex;
+  flex-direction: column;
+  color: #626262;
+  font-size: 11px;
+
+}
 
 /* Кнопки: вход, регистрация, корзина */
 .header-buttons {
+  width: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -282,7 +309,6 @@ header {
   background: #262626;
   color: #FFFFFF;
   border: none;
-
 }
 
 @media (min-width: 768px) {
@@ -307,8 +333,6 @@ header {
 
 /* Поле поиска */
 .restaurant-search-input {
-  display: flex;
-  justify-content: space-around;
   width: 100%;
   padding-left: 32px;
   margin-top: 38px;
@@ -319,8 +343,7 @@ header {
   font-size: 13px;
   line-height: 24px;
   background: url(./images/stores/search.svg) no-repeat 0px;
-  margin-left: 8px;
-  margin-right: 8px;
+  
 }
 
 @media (min-width: 768px) {
@@ -335,7 +358,55 @@ hr {
   mix-blend-mode: normal;
   opacity: 0.5;
   margin-top: 15px;
-  margin-left: 8px;
-  margin-right: 8px;
 }
   
+.restaurant-list-title {
+  line-height: 34px;
+  font-size: 22px;
+  color: #1D1D1D;
+  margin-top: 40px;
+ 
+  
+}
+
+@media (min-width: 768px) {
+  .restaurant-list-title {
+    margin-top: 56px;
+  }
+}
+
+
+.restaurant-list-info {
+  margin: 16px 0 20px;
+}
+
+.restaurant-photo {
+width:100%;
+}
+
+@media (min-width: 768px) {
+  .restaurant-photo {
+    
+  }
+}
+
+.restaurant-name {
+  line-height: 24px;
+  font-size: 16px;
+  color: #1D1D1D;
+  margin: 16px 0px 4px 0px;
+}
+
+.restaurant-category {
+  line-height: 21px;
+  font-size: 14px;
+  color: #626262;
+  margin: 0px 0px 4px 0px;
+}
+
+.restaurant-time {
+  line-height: 21px;
+  font-size: 13px;
+  color: #1D1D1D;
+  margin: 0;
+}
