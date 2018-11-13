@@ -131,13 +131,17 @@ header {
   box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
 }
 
+
+/* Логотип */
 .logo {
   display: flex;
   align-self: center;
   height: 40px;
-
+  margin-top: 1px;
+  justify-content: flex-start;
 }
 
+/* Время и адрес доставки */
 .delivery{ 
   display: none;
 }
@@ -146,6 +150,12 @@ header {
   .delivery{ 
     display: flex;
     align-content: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 992px) { 
+  .delivery{ 
     justify-content: flex-end;
   }
 }
@@ -161,7 +171,7 @@ header {
   -moz-appearance: none;
   appearance: none;
   height: 40px;
-  width: 65px;
+  width: 63px;
   border: 1px solid #E0E0E0;
   border-radius: 2px;
   text-align: center;
@@ -169,9 +179,6 @@ header {
   font-size: 13px;
   color: #1D1D1D;
   line-height: 24px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
 }
 
 @media (min-width: 768px) {
@@ -206,37 +213,37 @@ header {
 }
 
 .delivery-address {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
   background: url(./images/stores/location.svg) no-repeat 12px;
   width: 223px;
-  height: 40px;
+  height: 36px;
   border: 1px solid #E0E0E0;
   border-radius: 2px;
   color: #1D1D1D;
-  padding-left: 36px;
+  padding-left: 35px;
   font-size: 13px;
-  line-height: 24px;
+  line-height: 24px; 
+  margin-top: 1px;
 }
 
 
 @media (min-width: 768px) {
   .delivery-address {
     font-size: 13px;
-    width: 215px;
+    width: 179px;
+    padding-left: 36px;
   }
 }
 
 @media (min-width: 992px) {
   .delivery-address {
     font-size: 16px;
-    width: 292px;
+    width: 256px;
+    padding-left: 36px;
   }
 }
 
 
-
+/* Кнопки: вход, регистрация, корзина */
 .header-buttons {
   display: flex;
   justify-content: flex-end;
@@ -249,7 +256,6 @@ header {
   border-radius: 2px;
   font-size: 11px;
   line-height: 13px; 
-  margin-right: 16px;
 }
 
 @media (min-width: 768px) {
@@ -260,11 +266,16 @@ header {
   }
 }
 
-
-
 .button-sign-in{
   background: #fff;
   border: 1px solid #E0E0E0;
+  margin-right: 12px;
+}
+
+@media (min-width: 768px) {
+  .button-sign-in {
+    margin-right: 16px;
+  }
 }
 
 .button-register{
@@ -274,6 +285,11 @@ header {
 
 }
 
+@media (min-width: 768px) {
+  .button-register {
+    margin-right: 27px;
+  }
+}
 
 .button-basket{
     width: 19px;
@@ -281,11 +297,45 @@ header {
     background: url(./images/stores/basket.svg) no-repeat;
     border: none;
     display: none;
-  }
+}
   
-  @media (min-width: 768px) {
-    .button-basket{ 
-      display: flex;
-      margin-left: 12px;
-    }
+@media (min-width: 768px) {
+  .button-basket{ 
+    display: flex;
   }
+}
+
+/* Поле поиска */
+.restaurant-search-input {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding-left: 32px;
+  margin-top: 38px;
+  color: #626262;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  border: none;
+  font-size: 13px;
+  line-height: 24px;
+  background: url(./images/stores/search.svg) no-repeat 0px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+@media (min-width: 768px) {
+  .restaurant-search-input {
+    font-size: 16px;
+  }
+}
+
+hr {
+  width: 100%;
+  color: #626262;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  margin-top: 15px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+  
