@@ -183,12 +183,14 @@ header {
   color: #1D1D1D;
   line-height: 24px;
   margin-top: 8px;
+  margin-right: 8px;
 }
 
 @media (min-width: 768px) {
   .delivery-time {
     width: 57px;
     margin-top: 0px;
+    margin-right: 0px;
   }
 }
 
@@ -352,7 +354,7 @@ header {
   }
 }
 
-hr {
+.line-section {
   width: 100%;
   color: #626262;
   mix-blend-mode: normal;
@@ -365,8 +367,6 @@ hr {
   font-size: 22px;
   color: #1D1D1D;
   margin-top: 40px;
- 
-  
 }
 
 @media (min-width: 768px) {
@@ -375,18 +375,15 @@ hr {
   }
 }
 
-
-.restaurant-list-info {
-  margin: 16px 0 20px;
-}
-
 .restaurant-photo {
-width:100%;
+  min-height: 250px;
+  width: 100%;
 }
 
 @media (min-width: 768px) {
   .restaurant-photo {
-    
+    min-height: 256px;
+    width:100%; 
   }
 }
 
@@ -409,4 +406,189 @@ width:100%;
   font-size: 13px;
   color: #1D1D1D;
   margin: 0;
+  margin-bottom: 36px;
 }
+
+
+footer {
+  margin-top: 32px;
+  background: #262626;
+}
+
+@media (min-width: 992px) {
+  footer {
+    margin-top: 64px;
+  }
+}
+
+.logo-footer {
+  padding-top: 56px;
+  display: flex;
+  align-self: center;
+  justify-content: flex-start;
+  margin-bottom: 40px;
+}
+
+.footer-line {
+  width: 100%;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.4;
+  margin: 0px;
+}
+
+.footer-language {
+  margin-top: 32px;
+  background: #3B3B3B;
+  width: 173px;
+  
+
+}
+
+@media (min-width: 768px) {
+  .footer-language {
+    width: 176px;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer-language {
+    width: 227px;
+  }
+}
+
+.footer-select {
+  display: flex;
+  background: url(./images/stores/world.svg) no-repeat 18px,
+  url(./images/stores/shape.svg) no-repeat 150px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-size: 13px;
+  padding: 13px 0 12px 48px;
+  width: 173px;
+  color: #fff;
+  border-radius: 2px;
+  border: none;
+ 
+}
+
+
+@media (min-width: 768px) {
+  .footer-select {
+    width: 176px;
+    background: url(./images/stores/world.svg) no-repeat 18px, url(./images/stores/shape.svg) no-repeat 153px;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer-select {
+    width: 227px;
+    background: url(./images/stores/world.svg) no-repeat 18px, url(./images/stores/shape.svg) no-repeat 205px;
+  }
+}
+
+.hashtag {
+  margin-top: 32px;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+.hashtag-green {
+  color: #49A144;
+  font-size: 16px;
+}
+
+.footer-social {
+  display: flex;
+}
+
+.social-icon {
+  display: inline-flex;
+  width: 16px;
+  margin-right: 20px;
+}
+
+.footer-menu-first {
+  margin-top: 40px;
+}
+
+.footer-menu-last {
+  margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .footer-menu-last {
+    margin-top: 40px;
+    margin-bottom: 48px;
+  }
+}
+
+.menu-link {
+  display: flex;
+  font-size: 13px;
+  color: #FFFFFF;
+  margin: 0px 0px 23px 0px;
+  text-decoration: none;
+}
+
+.footer-apps {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+@media (min-width: 768px) {
+  .footer-apps {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+.applestore-icon {
+  width: 107px;
+  height: 36px;
+  margin-right: 25px;
+}
+
+@media (min-width: 768px) {
+  .applestore-icon {
+    width: 121px;
+    height: 40px;
+    margin-right: 40px;
+  }
+}
+
+.googleplay-icon {
+  width: 124px;
+  height: 36px;
+}
+
+@media (min-width: 768px) {
+  .googleplay-icon {
+    width: 135px;
+    height: 40px;
+  }
+}
+
+.footer-copyright {
+  display: flex;
+  color: #FFFFFF;
+  font-size: 11px;
+}
+
+@media (min-width: 768px) {
+  .footer-copyright {
+    margin: 40px 0;
+  }
+}
+
+.footer-copyright-top {
+  margin-top: 40px;
+}
+
+.footer-copyright-bottom {
+  margin-bottom: 40px;
+}
+
