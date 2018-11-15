@@ -141,7 +141,6 @@ header {
   box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
 }
 
-
 /* Логотип */
 .logo {
   display: flex;
@@ -345,7 +344,6 @@ header {
   font-size: 13px;
   line-height: 24px;
   background: url(./images/stores/search.svg) no-repeat 0px;
-  
 }
 
 @media (min-width: 768px) {
@@ -409,7 +407,6 @@ header {
   margin-bottom: 36px;
 }
 
-
 footer {
   margin-top: 32px;
   background: #262626;
@@ -441,8 +438,6 @@ footer {
   margin-top: 32px;
   background: #3B3B3B;
   width: 173px;
-  
-
 }
 
 @media (min-width: 768px) {
@@ -470,7 +465,6 @@ footer {
   color: #fff;
   border-radius: 2px;
   border: none;
- 
 }
 
 
@@ -590,5 +584,21 @@ footer {
 
 .footer-copyright-bottom {
   margin-bottom: 40px;
+}
+
+.scroll-up {
+  width: 64px;
+  height: 64px;
+  position: fixed;
+  background: #59BD5A url(./images/stores/arrow.svg) no-repeat center;
+  right: 16px;
+  bottom: 24px;
+}
+
+@media (min-width: 768px) {
+  .body-scroll {
+    width: 80px;
+    height: 80px;
+  }
 }
 
