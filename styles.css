@@ -189,6 +189,7 @@ header {
   text-align-last: center;
   border: 1px solid #E0E0E0;
   border-radius: 2px;
+  outline: none;
 }
 
 @media (min-width: 768px) {
@@ -235,6 +236,7 @@ header {
   background: url(./images/stores/location.svg) no-repeat 12px;
   border: 1px solid #E0E0E0;
   border-radius: 2px;
+  outline: none;
 }
 
 @media (min-width: 768px) {
@@ -303,6 +305,8 @@ header {
   margin-right: 12px;
   background: #fff;
   border: 1px solid #E0E0E0;
+  outline: none;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
@@ -315,6 +319,8 @@ header {
   color: #fff;
   background: #262626;
   border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
@@ -329,6 +335,8 @@ header {
   height: 23px;
   background: url(./images/stores/basket.svg) no-repeat;
   border: none;
+  outline: none;
+  cursor: pointer;
 }
   
 @media (min-width: 768px) {
@@ -349,6 +357,7 @@ header {
   background: url(./images/stores/search.svg) no-repeat 0px;
   border: none;
   opacity: 0.5;
+  outline: none;
 }
 
 @media (min-width: 768px) {
@@ -470,6 +479,7 @@ footer {
   url(./images/stores/shape.svg) no-repeat 150px;
   border: none;
   border-radius: 2px;
+  outline: none;
 }
 
 @media (min-width: 768px) {
