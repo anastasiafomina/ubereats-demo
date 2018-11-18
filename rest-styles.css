@@ -135,7 +135,7 @@ p {
   
 body {
   font-family: 'Roboto', sans-serif;
-  font-weight: normal;
+  min-width: 302px;
 }
   
 header {
@@ -341,14 +341,34 @@ header {
   }
 }
 
-
 .restaurant {
   height: 255px;
   width: 100%;
-  background: url(./images/restaurant/pushkin.svg) no-repeat center;
+  background: url(./images/restaurant/pushkin-xs.jpg) no-repeat center;
   background-position: center;
   background-size: cover;
 }
+
+@media (min-width: 768px) {
+  .restaurant {
+    display: flex;
+    align-items: center;
+    height: 364px;
+    width: 100%;
+    background: url(./images/restaurant/pushkin-sm.jpg) no-repeat center;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 992px) {
+  .restaurant {
+    background: url(./images/restaurant/pushkin-md.jpg) no-repeat center;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
 
 .rest-description {
   margin-top: 131px;
@@ -356,7 +376,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  justify-content: space-between;
   background: #fff;
   border-radius: 2px;
   box-shadow: 0px 0px 16px rgba(117, 117, 117, 0.2);
@@ -364,38 +384,42 @@ header {
   
 @media (min-width: 768px) {
   .rest-description {
+    margin-top: 0px;
     padding: 38px 48px;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
   }
 }
 
 .rest-name {
+  margin: 0;
   text-align: center;
   width: 100%;
   font-size: 24px;
   line-height: 28px;
   color: #1d1d1d;
-  margin: 0;
 }
 
 @media (min-width: 768px) {
-    .rest-name {
-      font-size: 36px;
+  .rest-name {
+    font-size: 36px;
+    line-height: 42px;
+    text-align: left;
 }
 
 .rest-category {
   margin: 40px 0 0;
   text-align: center;
-  width: 100%;
   font-size: 14px;
   color: #626262;
 }
 
 @media (min-width: 768px) {
-    .rest-category {
-      margin: 62px 0 0;
-    }
+  .rest-category {
+    margin: 62px 0 0;
+  }
 }
 
 .rest-time {
@@ -417,9 +441,31 @@ header {
   }
 }
 
+.navigation {
+  display: none;
+}
 
+@media (min-width: 768px) {
+  .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: #fff;
+    border: 1px solid rgba(117, 117, 117, 0.2);
+    padding: 32px 0 29px;
+  }
+}
 
+.nav-link {
+  margin-right: 40px;
+  font-size: 16px;
+  color: #626262;
+  text-decoration: none;
+}
 
+.nav-link-choosen {
+  color: #327430;
+}
 
 
 
