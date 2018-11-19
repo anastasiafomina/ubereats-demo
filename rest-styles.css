@@ -10,6 +10,7 @@ h5,
 h6,
 p {
   font-weight: normal;
+  font-style: normal;
 }
   
 .container{
@@ -314,7 +315,7 @@ header {
 }
   
 .button-register{
-  color: #FFFFFF;
+  color: #fff;
   background: #262626;
   border: none;
   outline: none;
@@ -347,6 +348,7 @@ header {
   background: url(./images/restaurant/pushkin-xs.jpg) no-repeat center;
   background-position: center;
   background-size: cover;
+  background-color: #F2F2F2;
 }
 
 @media (min-width: 768px) {
@@ -372,11 +374,13 @@ header {
 
 .rest-description {
   margin-top: 131px;
-  padding: 24px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
   background: #fff;
   border-radius: 2px;
   box-shadow: 0px 0px 16px rgba(117, 117, 117, 0.2);
@@ -385,7 +389,7 @@ header {
 @media (min-width: 768px) {
   .rest-description {
     margin-top: 0px;
-    padding: 38px 48px;
+    padding: 38px 48px 38px 48px;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: baseline;
@@ -393,12 +397,18 @@ header {
   }
 }
 
+@media (min-width: 768px) {
+  .rest-description {
+    padding: 38px;
+  }
+}
+
 .rest-name {
   margin: 0;
-  text-align: center;
   width: 100%;
   font-size: 24px;
   line-height: 28px;
+  text-align: center;
   color: #1d1d1d;
 }
 
@@ -406,13 +416,13 @@ header {
   .rest-name {
     font-size: 36px;
     line-height: 42px;
-    text-align: left;
+  }
 }
 
 .rest-category {
-  margin: 40px 0 0;
-  text-align: center;
+  margin: 40px 0 0;;
   font-size: 14px;
+  line-height: 16px;
   color: #626262;
 }
 
@@ -467,8 +477,128 @@ header {
   color: #327430;
 }
 
+.menu {
+  padding-bottom: 40px;
+}
 
+@media (min-width: 768px) {
+  .menu {
+    padding-bottom: 48px;
+  }
+}
+  
+@media (min-width: 992px) {
+  .menu {
+    padding-bottom: 80px;
+  }
+}
 
+.menu-title {
+  margin-top: 111px;
+  margin-bottom: 0px;
+  padding-bottom: 12px;
+  width: 100%;
+  font-size: 22px;
+  line-height: 34px;
+  color: #1d1d1d;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .menu-title {
+    text-align: left;
+    margin-top: 56px;
+    padding-bottom: 0px;
+  }
+}
+    
+.menu-line {
+  margin: 0 auto 43px;
+  width: 50px;
+  background: #757575;
+}
+
+@media (min-width: 768px) {
+  .menu-line {
+    display: none;
+  }
+}
+
+.menu-unit {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(117, 117, 117, 0.2);
+}
+
+@media (min-width: 768px) {
+  .menu-unit {
+    margin: 32px 0 0;
+    padding-left: 24px;
+    background: #757575;
+    opacity: 0.04;
+    border: 1px solid rgba(117, 117, 117, 0.2);
+    border-radius: 2px;
+  }
+}
+
+.menu-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.menu-name {
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+  color: #1D1D1D;
+  white-space: nowrap; /* Запрещаем перенос строк */
+  overflow: hidden; /* Обрезаем все, что не помещается в область */
+  text-overflow: ellipsis; /* Добавляем многоточие */
+}
+
+@media (min-width: 768px) {
+  .menu-name {
+    font-size: 16px;
+    line-height: 24px;
+    width: 100%;
+  }
+}
+
+.menu-info {
+  margin: 0;
+  font-size: 13px;
+  line-height: 21px;
+  color: #626262;
+  position: absolute;
+}
+
+.menu-price {
+  margin: 41px 0 15px;
+  font-size: 15px;
+  line-height: 21px;
+  color: #1d1d1d;
+}
+
+.menu-img {
+  width: 102px;
+  height: 102px;
+}
+
+@media (min-width: 768px) {
+  .menu-img {
+    width: 200px;
+    height: 160px;
+  }
+}
+
+@media (min-width: 992px) {
+  .menu-img {
+    width: 170px;
+    height: 160px;
+  }
+}
 
 footer {
   margin-top: 32px;
@@ -492,7 +622,7 @@ footer {
 .footer-line {
   margin: 0;
   width: 100%;
-  color: #FFFFFF;
+  color: #fff;
   mix-blend-mode: normal;
   opacity: 0.4;
 }
@@ -548,7 +678,7 @@ footer {
 .hashtag {
   margin-top: 32px;
   font-size: 16px;
-  color: #FFFFFF;
+  color: #fff;
 }
   
 .hashtag-green {
@@ -585,7 +715,7 @@ footer {
   display: flex;
   margin: 0px 0px 23px 0px;
   font-size: 13px;
-  color: #FFFFFF;
+  color: #fff;
   text-decoration: none;
 }
   
@@ -632,7 +762,7 @@ footer {
 .footer-copyright {
   display: flex;
   font-size: 11px;
-  color: #FFFFFF;
+  color: #fff;
 }
   
 @media (min-width: 768px) {
