@@ -7,12 +7,22 @@ h2,
 h3,
 h4,
 h5,
-h6,
-p {
+ {
   font-weight: normal;
   font-style: normal;
 }
-  
+
+button,
+input,
+select {
+  outline: none;
+}
+
+button,
+select {
+cursor: pointer;
+}
+
 .container{
   box-sizing: border-box;
   padding-left: 8px;
@@ -190,7 +200,6 @@ header {
   text-align-last: center;
   border: 1px solid #E0E0E0;
   border-radius: 2px;
-  outline: none;
 }
   
 @media (min-width: 768px) {
@@ -237,7 +246,6 @@ header {
   background: url(./images/stores/location.svg) no-repeat 12px;
   border: 1px solid #E0E0E0;
   border-radius: 2px;
-  outline: none;
 }
   
 @media (min-width: 768px) {
@@ -305,7 +313,6 @@ header {
   margin-right: 12px;
   background: #fff;
   border: 1px solid #E0E0E0;
-  outline: none;
 }
   
 @media (min-width: 768px) {
@@ -318,7 +325,6 @@ header {
   color: #fff;
   background: #262626;
   border: none;
-  outline: none;
 }
   
 @media (min-width: 768px) {
@@ -333,7 +339,6 @@ header {
   height: 23px;
   background: url(./images/restaurant/basket.svg) no-repeat;
   border: none;
-  outline: none;
 }
     
 @media (min-width: 768px) {
@@ -370,7 +375,6 @@ header {
     background-size: cover;
   }
 }
-
 
 .rest-description {
   margin-top: 131px;
@@ -451,6 +455,7 @@ header {
   }
 }
 
+/* Навигация */
 .navigation {
   display: none;
 }
@@ -477,9 +482,10 @@ header {
   color: #327430;
 }
 
+/* Меню */
 .menu {
   padding-bottom: 40px;
-}
+} 
 
 @media (min-width: 768px) {
   .menu {
@@ -513,7 +519,7 @@ header {
 }
     
 .menu-line {
-  margin: 0 auto 43px;
+  margin: 0 auto 27px;
   width: 50px;
   background: #757575;
 }
@@ -527,6 +533,7 @@ header {
 .menu-unit {
   display: flex;
   justify-content: space-between;
+  margin-top: 16px;
   border-bottom: 1px solid rgba(117, 117, 117, 0.2);
 }
 
@@ -534,10 +541,14 @@ header {
   .menu-unit {
     margin: 32px 0 0;
     padding-left: 24px;
-    background: #757575;
-    opacity: 0.04;
     border: 1px solid rgba(117, 117, 117, 0.2);
     border-radius: 2px;
+  }
+}
+
+@media (min-width: 992px) {
+  .menu-unit {
+    padding-left: 16px;
   }
 }
 
@@ -567,11 +578,20 @@ header {
 }
 
 .menu-info {
+  position: absolute;
   margin: 0;
+  left: 0;
+  top: 28px;
   font-size: 13px;
   line-height: 21px;
   color: #626262;
-  position: absolute;
+}
+
+@media (min-width: 768px) {
+  .menu-info {
+    left: 0;
+    top: 44px;
+  }
 }
 
 .menu-price {
@@ -579,6 +599,13 @@ header {
   font-size: 15px;
   line-height: 21px;
   color: #1d1d1d;
+}
+
+@media (min-width: 768px) {
+  .menu-price {
+    margin-top: 83px;
+    margin-bottom: 15px;
+  }
 }
 
 .menu-img {
@@ -600,15 +627,9 @@ header {
   }
 }
 
+/* Footer */
 footer {
-  margin-top: 32px;
   background: #262626;
-}
-  
-@media (min-width: 992px) {
-  footer {
-    margin-top: 64px;
-  }
 }
   
 .logo-footer {
